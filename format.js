@@ -7,7 +7,7 @@ function convert() {
     str += '<p style="padding: 0px; margin: 0px;">&lt;pre&gt;</p>'
 
     for (let i = 0; i < txt.length; i++) {
-        temp = txt[i].replace("<", "&lt;").replace(">", "&gt;");
+        temp = txt[i].substring(4).replace("<", "&lt;").replace(">", "&gt;");
         str += "<pre style='padding: 0px; margin: 0px;'>&lt;code&gt;" + temp + "&lt;/code&gt;</pre>";
     }
 
