@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format Code</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        #output {
+            border: solid black;
+            border-width: 1px;
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea name="" id="text" cols="100" rows="30" placeholder="Code here"></textarea>
+    <br>
+    <input id="clickMe" type="button" value="Convert" onclick="convert();" />
+    <script src="format.js"></script>
+    <br>
+    <p id="output">output</p>
+</body>
+
+</html>
